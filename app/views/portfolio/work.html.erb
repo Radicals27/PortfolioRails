@@ -27,19 +27,23 @@
                     <br><br>
 
                     <div id = "icons_layout">
-                        <img src="icons/html5icon.png" alt="HTML5 icon" title="HTML5">
-                        <img src="icons/css3icon.png"  alt="CS3 icon" title="CS3">
-                        <img src="icons/jsicon.png"  alt="Javascript icon" title="Javascript">
-                        <img src="icons/pythonicon.png" alt="Python icon" title="Python">
-                        <img src="icons/rubyicon.png"  alt="Ruby icon" title="Ruby">
-                        <img src="icons/terminalicon.png"  alt="Terminal icon" title="Terminal">
-                        <img src="icons/giticon.png" alt="Git icon" title="GIT">
+                        <%= image_tag("html5icon.png", alt: "HTML5 icon", title: "HTML5") %>
+                        <%= image_tag("css3icon.png", alt: "CS3 icon", title: "CS3") %>
+                        <%= image_tag("jsicon.png", alt: "JS icon", title: "Javascript") %>
+                        <%= image_tag("pythonicon.png", alt: "Python icon", title: "Python") %>
+                        <%= image_tag("rubyicon.png", alt: "Ruby icon", title: "Ruby") %>
+                        <%= image_tag("terminalicon.png", alt: "Terminal icon", title: "Terminal") %>
+                        <%= image_tag("giticon.png", alt: "Git icon", title: "Git") %>
+
                     </div>
                     <br><br><br><br>
                     <div class="center">
                         Some of my past projects include:<br><br>
                         Game of Death (Terminal App, Ruby)<br><br>
-                        <a href="https://github.com/Radicals27/game_of_death" target="_blank"><img class="app_img" src="img/gameofdeath.gif" alt="Game of Death terminal application running" title="Game of Death"></a>
+                        <a href="https://github.com/Radicals27/game_of_death" target="_blank">
+                        
+                        <%= image_tag("gameofdeath.gif", alt: "Game of Death text game", title: "Game of Death") %>
+                        </a>
                     </div>
         
 
