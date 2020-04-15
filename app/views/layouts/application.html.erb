@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PortfolioRails</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <% if current_page?("/work") || current_page?("/about") || current_page?("/blog")%>
+    <div class="long_card">
+    <% else %>
+    <div class="card">
+    <% end %>
+          <nav>
+              <ul>
+                  <li><%= link_to "Home", "/" %></li>
+                  <li><%= link_to "My Work", "/work" %></li>
+                  <li><%= link_to "About Me", "/about" %></li>
+                  <li><%= link_to "Blog", "/blog" %></li>             
+                  <li><%= link_to "Contact", "/contact" %></li>
+              </ul>
+          </nav>
+
+    <%= yield %>
+    </div>
+  </body>
+</html>
